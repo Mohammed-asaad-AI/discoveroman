@@ -10,7 +10,9 @@
 	<link rel="stylesheet" href="https://discoveroman.blob.core.windows.net/discoveromancontainer/css/bootstrap.css">
 	<link rel="stylesheet" href="https://discoveroman.blob.core.windows.net/discoveromancontainer/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://discoveroman.blob.core.windows.net/discoveromancontainer/css/main.css">
-	<style>.default-header {
+	<style>
+		
+		.default-header {
   position: absolute;
   top: 0;
   left: 0;
@@ -25,15 +27,19 @@ body {
 }
  </style>
 	<style>
+@media (max-width: 767px) {
+  .navbar-collapse {
+    background-color: #222 !important; /* خلفية صلبة للقائمة المنسدلة الكاملة */
+  }
+
   .dropdown-menu {
-    background-color: rgba(34, 34, 34, 0.97) !important; /* لون شبه شفاف غامق */
-    color: white !important;
+    background-color: #222 !important; /* خلفية صلبة لكل عناصر القائمة */
+    box-shadow: none !important;
     border: none !important;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
-    z-index: 9999 !important;
-    position: absolute !important;
-    top: 100%;
-    left: 0;
+  }
+
+  .dropdown-item {
+    color: white !important;
   }
 
   .dropdown-item:hover,
@@ -41,16 +47,9 @@ body {
     background-color: #444 !important;
     color: white !important;
   }
+}
 
-  /* تأكد أن هذا موجود */
-  .navbar {
-    position: relative;
-    z-index: 1000;
-  }
 
-  .default-header {
-    z-index: 1000;
-  }
 </style>
 
 
